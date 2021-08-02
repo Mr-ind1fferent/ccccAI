@@ -48,3 +48,7 @@ models/
 
 ## 8：
 并且输出图会保存在show.png中
+
+如下图：
+
+![image](https://user-images.githubusercontent.com/74087260/127848282-fb5ff95e-cb0d-4f0d-afec-ce52ce0f9faa.png)
