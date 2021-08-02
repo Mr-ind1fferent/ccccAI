@@ -1,0 +1,24 @@
+(paddle) zdz@gpu:~/wsw/pdpd/PaddleDetection$ python tools/infer_mot.py -c configs/mot/deepsort/deepsort_pcb_pyramid_r101.yml --det_results_dir=output/pedestrain/pred/pedestrian_yolov3_darknet/result/1/ --video_file=/home/zdz/wsw/pdpd/PaddleDetection/test_video/1.mp4  --output_dir=/home/zdz/wsw/pdpd/PaddleDetection/output/pedestrain/pred/pedestrian_yolov3_darknet/result/result/ --save_videos
+/home/zdz/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/tensor/creation.py:125: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+W0713 11:05:46.861919  4477 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0713 11:05:46.866209  4477 device_context.cc:422] device: 0, cuDNN Version: 7.6.
+[07/13 11:05:52] ppdet.utils.checkpoint INFO: Finish resuming model weights: /home/zdz/.cache/paddle/weights/deepsort_pcb_pyramid_r101.pdparams
+[07/13 11:05:53] ppdet.engine.tracker INFO: Starting tracking /home/zdz/wsw/pdpd/PaddleDetection/test_video/1.mp4
+[07/13 11:05:53] ppdet.data.source.mot INFO: Length of the video: 287 frames
+[07/13 11:05:56] ppdet.engine.tracker INFO: Finish loading detection results file output/pedestrain/pred/pedestrian_yolov3_darknet/result/1/1.txt.
+[07/13 11:05:56] ppdet.engine.tracker INFO: Processing frame 0 (100000.00 fps)
+/home/zdz/miniconda3/envs/paddle/lib/python3.7/site-packages/paddle/tensor/creation.py:125: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+[07/13 11:06:11] ppdet.engine.tracker INFO: Processing frame 40 (3.03 fps)
+[07/13 11:06:29] ppdet.engine.tracker INFO: Processing frame 80 (2.89 fps)
+[07/13 11:06:48] ppdet.engine.tracker INFO: Processing frame 120 (2.67 fps)
+[07/13 11:07:06] ppdet.engine.tracker INFO: Processing frame 160 (2.69 fps)
+[07/13 11:07:22] ppdet.engine.tracker INFO: Processing frame 200 (2.73 fps)
+[07/13 11:07:38] ppdet.engine.tracker INFO: Processing frame 240 (2.78 fps)
+[07/13 11:07:55] ppdet.engine.tracker INFO: Processing frame 280 (2.77 fps)
+[07/13 11:07:58] ppdet.engine.tracker INFO: MOT results save in /home/zdz/wsw/pdpd/PaddleDetection/output/pedestrain/pred/pedestrian_yolov3_darknet/result/result/mot_results/1.txt
+sh: 1: ffmpeg: not found
+[07/13 11:07:58] ppdet.engine.tracker INFO: Save video in /home/zdz/wsw/pdpd/PaddleDetection/output/pedestrain/pred/pedestrian_yolov3_darknet/result/result/mot_outputs/1/../1_vis.mp4
